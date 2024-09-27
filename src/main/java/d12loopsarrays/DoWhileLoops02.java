@@ -45,6 +45,7 @@ public class DoWhileLoops02 {
                 System.out.println("Hesabiniza hosgeldiniz..");
                 break;
             }
+            System.out.println("kalan hak :"+(3-counter));
             counter++;
 
         } while (true); //sonsuz dongu olusturduk, icerden kirilmadigi surece calisacak

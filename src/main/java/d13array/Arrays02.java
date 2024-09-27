@@ -20,12 +20,17 @@ public class Arrays02 {
         ages[5] = 32;
 
 
-        System.out.println(Arrays.toString(ages));
+        System.out.println(Arrays.toString(ages));//[20, 23, 19, 44, 15, 32]
 
-//        Arrays.sort(ages);
-//        System.out.println(Arrays.toString(ages));
-//
-//        System.out.println(ages[0] + ages[ages.length - 1]); //59
+         // Arrays.sort(ages);
+         // System.out.println(Arrays.toString(ages)); //[15, 19, 20, 23, 32, 44]
+
+        //sort() methodu sayilari kucukten buyuge siralar (ascending order)
+        //String data tiplerini alfabetik siralar (alphabetical order)
+        //ascending order + alphabetical order = natural order
+        //sort() methodu Array elemanlarini natural order’a gore siralar
+        //
+        // System.out.println(ages[0] + ages[ages.length - 1]); //59
 
         //------------------------------------------
         //2. yol

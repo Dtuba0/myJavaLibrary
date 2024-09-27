@@ -16,7 +16,8 @@ public class NumberGuessingGame {
         Random random = new Random();
 
         //0-100 arasinda rastgele bir sayi uretelim
-        int rastgeleSayi = random.nextInt(101);
+        int rastgeleSayi = random.nextInt(101);//0-100 arası sayı urettık//(bound: 81)+21
+      //  System.out.println(rastgeleSayi); javanın tuttugu sayıyı gormek için
 
         //Kullanicinin kac kere tahmin yaptigini takip etmek icin bir sayac olusturalim
         int denemeSayisi = 0;
@@ -51,6 +52,7 @@ public class NumberGuessingGame {
             }
 
         } while (!tahminDogrumu); //Dongu dogru tahmin yapincaya kadar devam edecek
+
         scanner.close(); //Random'da kapatiliyor mu?
 
         //ODEV: 20(dahil) ile 100(dahil) arasında random sayi isteseydik?

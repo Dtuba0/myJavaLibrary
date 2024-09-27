@@ -24,6 +24,28 @@ public class Arrays04 {
         }
         System.out.println(Arrays.toString(newArr));//[2, 3, 12, 0, 0, 0]
 
+        //--------------------------------------------------------
+
+        //Arraylerin esit olup olmadigi nasil anlasilir?
+        //Iki arrayin ayni olabilmesi icin,aynı uzunluğa sahip olmaları ve ayni index te ayni elemanlarin bulunmasi gerekir
+
+        int [ ] a = new int[3];
+        a [0] = 2;
+        a [1] = 1;//3
+        a [2] = 3;//1 olsaydı true verıyordu
+
+        int [ ] b = new int[3];
+        b [0] = 2;
+        b [1] = 3;
+        b [2] = 1;
+
+        boolean result = Arrays.equals(a,b);
+        System.out.println("result = " + result);
+
+
+
+
+
 
 
 

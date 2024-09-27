@@ -73,13 +73,16 @@ public class Arrays01 {
         cities[3] = "Adana";
         cities[4] = "Ankara";
 
-        System.out.println(Arrays.toString(cities));
+        System.out.println(Arrays.toString(cities));//[Bayburt, Sivas, Denizli, Adana, Ankara]
+
+
         //1.yol: for loop
 
 
         int totalChar = 0;
 
-        for (int i = 0; i < cities.length; i++) { //length field'dir method degildir
+        for (int i = 0; i < cities.length; i++) { // Arraylerdeki length field'dir method degildir yanı alan okuması yapar
+
 
             totalChar = totalChar + cities[i].length(); //length() methoddur
 
@@ -98,6 +101,7 @@ public class Arrays01 {
         }*/
 
         int sum = 0;
+        
 
         for (String w : cities){
             sum = sum + w.length();
