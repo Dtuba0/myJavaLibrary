@@ -39,6 +39,19 @@ public class C01_switch {
                 System.out.println("Lütfen modunu almak istediginiz sayilari sırasıyla giriniz : ");
                 System.out.println("sayıların modu : "+input.nextDouble()% input.nextDouble());//payda'nın 0 olma durumunu kontrol ediniz
                 break;
+               /* case '^':
+            Scanner input = new Scanner(System.in);
+            System.out.println("Lütfen 10'dan kucuk bir tam sayi giriniz");
+            byte sayi = input.nextByte();
+            if (sayi < 10 && sayi > 0) {
+                int bosInt = 1;
+                for (int i = 1; i <= sayi; i++) {
+                    bosInt *= i;//bosInt=bosInt * i;
+                }
+                System.out.println(sayi + "! = " + bosInt);
+            } else {
+                System.out.println("Lütfen gecerli bir deger giriniz!!!");
+            }*/
             case '^':
                 System.out.println("Lütfen birbirinin kuvvetini almak istediginiz sayilari sirasiyla giriniz : ");
                 System.out.println("sayilar kuvvet durumu : "+Math.pow(input.nextDouble(), input.nextDouble()));//sayi*sayi karesini alırız//aynısını for ile yapabilirsiniz bu odev!!!!!

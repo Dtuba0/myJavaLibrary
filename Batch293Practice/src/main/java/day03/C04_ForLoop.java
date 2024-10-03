@@ -21,7 +21,30 @@ public class C04_ForLoop {
             }
             System.out.println();
         }
+        /*
+                     *
+                    * *
+                   *****
+                  *     *
+                 *       *
+         */
 
+        int satır = 5;
+
+        for (int bulsatır  = 1; bulsatır  <=satır; bulsatır ++) {
+            for (int bosluk = satır - bulsatır; bosluk >=1; bosluk--) {
+                System.out.print(" ");
+            }
+            for (int yıldız = 1; yıldız <= bulsatır*2-1 ; yıldız++) {
+               if (yıldız == 1||yıldız == bulsatır*2-1||bulsatır==satır/2+1){
+                   System.out.print("*");
+               }else {
+                   System.out.print(" ");
+               }
+
+            }
+            System.out.println();
+        }
 
 
     }
