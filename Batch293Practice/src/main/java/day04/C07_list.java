@@ -10,7 +10,7 @@ public class C07_list {
         List<Double> sayilar=List.of(1.5,3.14,1.8,57.57,37.0,13.5);
 
          /*
-        toplamları
+        elemanların toplamları
         eleman sayisi
          */
         double sum=0;

@@ -17,7 +17,7 @@ public class C07_Odev {
         //hangi dongu
         Scanner input = new Scanner(System.in);
         Random rnd = new Random();
-        int rndsayi = rnd.nextInt(100);
+        int rndsayi = rnd.nextInt(100);//bu sayıyı bılgısayar kendısı uretıyor
 
         int tahminHakki = 5;
         while (tahminHakki > 0) {

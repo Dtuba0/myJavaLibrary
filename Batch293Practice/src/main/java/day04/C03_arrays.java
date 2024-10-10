@@ -11,7 +11,9 @@ public class C03_arrays {
         bir program yazin. Ornek; array ((1,2,3,4,5)) ise output (2, 3,4,5, 1) olacak
         */
         int array[] = {1, 2, 3, 4, 5};
+        //1.yol
         //int arr[] = {2, 3, 4, 5, 1};//--HARDCODİNG
+        //2.yol dınamık
         int temp = array[0];
         System.out.println(Arrays.toString(array));
         //ne zaman for ne zaman foreach dongusu kullanıcaz?         indexlerle

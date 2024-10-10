@@ -15,7 +15,7 @@ public class C05_list {
         mylist.add(11);
         mylist.add(13);
         mylist.add(15);
-        mylist.add(5,12);
+        mylist.add(5,12);//indexe ekleme yapabılıyoruz
         System.out.println(mylist);
 
 

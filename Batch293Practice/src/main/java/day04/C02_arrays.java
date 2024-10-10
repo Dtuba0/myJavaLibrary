@@ -15,7 +15,9 @@ public class C02_arrays {
          int sayi[]={1,4,7,3,2,8,6,4,9,4,2,3,5,1,99,123,632,213,543,4332,43,56,7,54,657};
 
         Arrays.sort(sayi);
-        System.out.println(Arrays.toString(sayi));
+        System.out.println(Arrays.toString(sayi)); //short methodu kullanmadan kucukten buyuge sıralama odev--
+        // kendi sıralamısını yapan bir method olusturun
+
 
 
 
