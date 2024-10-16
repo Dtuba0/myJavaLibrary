@@ -7,7 +7,8 @@ public interface Engine {
      bu methodların imzalarını (adlarını ve parametrelerini) belirtir,
      ancak bu methodların nasıl uygulanacağını tanımlamaz.
      Class'lar, bu interface'leri uygulayarak (implement ederek) bu methodları
-      kendi ihtiyaçlarına göre tanımlarlar.
+      kendi ihtiyaçlarına göre tanımlarlar.--overrıde -- Class'lar, bu interface'leri uygulayarak
+      (implement ederek) bu methodları kendi ihtiyaçlarına göre tanımlarlar.
       */
 
      //i) interface icindeki method'lar otomatik olarak 'public' dir,

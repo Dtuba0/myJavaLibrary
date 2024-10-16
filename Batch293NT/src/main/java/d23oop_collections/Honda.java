@@ -32,7 +32,8 @@ public abstract class Honda {//4)Abstract method'lar ancak abstract class'lar ic
     //----------------------------------------------------
 
     //8) Abstract bir class'in abstract bir child'i olabilir ve abstract child parent'inin methodlarini
-    // override etmek zorunda degildir ama isterse de edebilir
+    // override etmek zorunda degildir ama isterse de edebilir  :) kendı turune torpıl var
+    //abstractchıld olusturuldu
 
     //--------------------------------------------------
 

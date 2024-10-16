@@ -1,17 +1,24 @@
 package d23oop_collections;
 
-public class AudiS5 {
+public class AudiS5 implements Engine, AC, Brake {
 
+    @Override
     public void eco(){
         System.out.println("Audi S5 ekonomik motor kullanir");
     }
 
+    @Override
     public void turbo(){
         System.out.println("Audi S5 turbo motor kullanir");
     }
 
+    @Override
     public void gas(){
         System.out.println("Audi S5 benzinli motor kullanir");
+    }
+    @Override
+    public void run(){
+        System.out.println("Audi S5 hava yastıgı calıstırır");
     }
 
     //-----------------------------------------------

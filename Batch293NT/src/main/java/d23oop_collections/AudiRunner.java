@@ -13,8 +13,14 @@ public class AudiRunner {
         System.out.println(AC.fiyat);//200
         System.out.println(Brake.fiyat);//100
 
-        Engine.speed();//Saatte 300km
-        a4.power();//200HP
+        Engine.speed();//Saatte 300km --
+        a4.power();//200HP---obje uzerınden ulasılıyor
+
+        AudiS5 s5 = new AudiS5();
+        s5.abs();//Audi S5 abs fren sistemi kullanir
+        s5.dijital();//Audi S5 dijital klima kullanir
+        s5.turbo();//Audi S5 turbo motor kullanir
+
 
 
 

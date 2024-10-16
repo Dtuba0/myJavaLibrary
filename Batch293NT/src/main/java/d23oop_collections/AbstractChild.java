@@ -5,4 +5,6 @@ public abstract class AbstractChild extends Honda{
     //Parentının abstract methodlarını ımplement etmek zorunda degıl
     //ınteljının sagladıgı guzel bır ınsıyatıf
 
+    //engıne methodunu kullanmak zorunda degıl
+
 }
