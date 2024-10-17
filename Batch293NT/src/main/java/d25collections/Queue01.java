@@ -58,11 +58,24 @@ public class Queue01 {
         //5)poll(): Kuyruğun başındaki öğeyi kuyruktan kaldırır ve döndürür. Kuyruk boşsa null döner.
         System.out.println(storage.poll());//null
 
+        /*
+            poll() veya peek() gibi metodlar, kuyruk boş olduğunda genellikle null döner.
+            Eğer kuyrukta null elemanlar varsa, bu metodlar null döndüğünde kuyruğun gerçekten boş olup olmadığını
+            ayırt etmek zorlaşır. bunu anlayamayiz. null elemaninimi kast ediyor bos mu demek istiyor.
+            LinkedList sınıfı aslında null elemanları destekler,
+            çünkü genel bir List yapısıdır ve null eleman eklenmesine izin verir.
+            Ancak Queue arayüzü için kullanılmaya başladığında, mantıksal sorunlar ve kafa karışıklığı nedeniyle
+            null eklemek önerilmez.
+            Kısacası, Java'da Queue arayüzüne null eleman eklemek, mantıksal olarak sorunlara yol açabilir ve bu yüzden çoğu
+            Queue implementasyonu bu işlemi desteklemez.
+            mola sirasinda yapilan aramalarda cikan sonuclar
+            */
+
         //6)element(): Kuyruğun başındaki öğeyi döndürür, ancak kuyruk boşsa bir istisna fırlatır.
          //System.out.println(storage.element());//HATA cunku queue bos
 
         //---------------------------------------------
-        //-------------------------
+
         // PriorityQueue (oncelik kuyrugu), bir FIFO (first in first out) yapısı ile nesneleri
         // öncelik sırasına göre sıralayan bir kuyruk (Queue) aracıdır.
         // Yani, en yüksek önceliğe sahip olan nesne, her zaman ilk olarak çıkar.
@@ -114,14 +127,14 @@ public class Queue01 {
         d.addFirst("Ali");
         System.out.println(d); //[Ali, Mehmet, Mahmut, Ekrem, Oya, Tansu]
 
-        for (String w : d) {
+        for (String w : d) {//alt alta yazdırmak için for kullandık
             System.out.println(w);
         }
         System.out.println("------------------------");
 
         //3) addLast(E e): Deque’nin sonuna bir öğe ekler. Dönüş türü yine void’dir.
 
-        d.addLast("Hasan");
+        d.addLast("Hasan");//lıstenın sonuna hasan ekledık ve alt alta yazdırdık
 
         for (String w : d) {
             System.out.println(w);
@@ -165,6 +178,16 @@ public class Queue01 {
         System.out.println(ad); //[]
 
         //ODEV: ArrayDeque’de belirli bir indekse veya araya doğrudan eleman eklemek için bir metod bulunur mu?
+        /*
+         Hayır, Java'daki ArrayDeque sınıfında belirli bir indekse doğrudan eleman eklemek için bir metod bulunmamaktadır.
+         ArrayDeque bir çift uçlu kuyruktur (double-ended queue) ve yalnızca şu operasyonlar desteklenir:
+
+         Eleman ekleme: Başına (addFirst) veya sonuna (addLast) ekleme işlemleri.
+         Eleman çıkarma: Başından (removeFirst) veya sonundan (removeLast) çıkarma işlemleri.
+         ArrayDeque, rastgele indekslemeye veya belirli bir indekse ekleme gibi işlemleri desteklemediği için,
+         eğer bu tür bir işlem yapmak isterseniz, mevcut bir List (örneğin ArrayList) kullanmanız daha uygun olacaktır.
+         ArrayList, belirli bir indekse eleman eklemek için add(int index, E element) metodunu sağlar.
+         */
 
 
 
