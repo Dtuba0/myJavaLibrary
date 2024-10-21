@@ -1,9 +1,6 @@
 package d26maps_exceptions;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Maps04 {
@@ -143,12 +140,63 @@ public class Maps04 {
                  countryPopulation.put("USA",400000000);
                  countryPopulation.put("Türkiye",83000000);
                  countryPopulation.put("Netherlands",18000000);
-                // countryPopulation.put(null,18000000);//hata
+                // countryPopulation.put(null,18000000);//hata treemaplere null eklemesı yapılamaz 3.madde
                   countryPopulation.put("Italy",null);
                   countryPopulation.put("France",null);
 
                   System.out.println(countryPopulation);
                   //{France=null, Germany=83000000, Italy=null, Netherlands=18000000, Türkiye=83000000, USA=400000000}
+
+
+                        /*
+                        LinkedHashMap, HashMap'e benzer, ancak ekleme sırasına göre sıralanmış bir şekilde verileri tutar.
+                   Yani, LinkedHashMap verileri eklediğiniz sırayla tutar ve bu sırayı korur.
+                   Bu nedenle, verileri eklediğiniz sırayla geri almanız gerektiğinde kullanışlı olabilir.
+
+                   **ornegin,bir takvim uygulamasında, etkinlikleri tarih sırasına göre tutmak için kullanılabilir.
+                   yada bir restoranın sipariş alım sistemi düşünün. Müşterilerin siparişlerini verme sırası,
+                   restoranın sipariş hazırlama sırasını belirler.
+
+                   Aynı mantık, müşteri hizmetleri çağrı merkezleri, sırayla hizmet veren işletmeler veya
+                   benzeri senaryolarda da kullanılabilir.
+                   Müşteri veya işlem sıralarını takip etmek için LinkedHashMap tercih edilebilir.LinkedHashMap sınıfı
+                   thread-safe degildir
+                   */
+
+                   LinkedHashMap <String , Integer> lhm =  new LinkedHashMap<>();
+                   lhm.put("Ali", 25);
+                   lhm.put("Can", 18);
+                   lhm.put("Mehmet", 30);
+
+                   for (Map.Entry<String, Integer> entry : lhm.entrySet()) {
+                       System.out.println(entry.getKey()+" -> " + entry.getValue());
+                   }
+
+                    /* Ali -> 25
+                     Can -> 18
+                     Mehmet -> 30 ==> insertion order
+
+                     */
+
+                     //-------------------------------------------------
+                     //HashMap arka planda nasil calisiyor?
+                     //HashMap'in varsayılan boyutu(kapasitesi) 16'dır (0 ila 15).16 adet "bucket" (kova) bulunacağı
+                     // anlamına gelir.
+                     // Bu "bucket"lar, HashMap içindeki anahtar-değer çiftlerini tutar. Bucket'in memory'de kapsadigi
+                     // alan degiskendir.
+
+                      HashMap<String, String> capitals = new HashMap<>();
+
+                       capitals.put("USA", "Washington");
+                       capitals.get("USA");
+                       capitals.put("Italy", "Rome");
+                       capitals.put("Turkiye", "Ankara");
+                       capitals.get("Turkiye");
+                       capitals.put("Turkiye", "Istanbul");
+
+
+
+
 
 
 
