@@ -8,7 +8,7 @@ public class E03 {
 
         String s = "Java";
         //selectChar(s, 2); //v
-        selectChar(s, 4);
+        selectChar(s, 5);
 
     } //main disi
 
@@ -18,11 +18,13 @@ public class E03 {
             char ch = s.charAt(idx);
             System.out.println(ch);
         } catch (StringIndexOutOfBoundsException e) {
-            System.err.println("olmayan index kullanmayiniz : " + e.getMessage()); //olmayan index kullanmayiniz : String index out of range: 4
-            e.printStackTrace(); //kod yazan hatayi gormek isterse yazar, exce[tion'i gosterir ama firlatmaz
+            System.err.println("olmayan index kullanmayiniz : " + e.getMessage()); //serr yaparak yaptık
+            //olmayan index kullanmayiniz : String index out of range: 4
+            e.printStackTrace(); //kod yazan hatayi gormek isterse yazar, exception'i gosterir ama firlatmaz
+            //developer ayrıntıları gormek ıcın kullanır exception'i gormek istersek kullaniriz
         }
 
-        System.out.println("App calisiyor");
+       System.out.println("App calisiyor");
 
     }
 }

@@ -35,8 +35,8 @@ public class E01 {
 
         //1) ArithmeticException : Matematik kurallarinda herhangi bir hata yaparsaniz bu exception'i alirsiniz
         //division(5,0);
-        //division2(8, 0);
-        division3(7, 0);
+      //  division2(8, 0);
+       division3(7, 0);
 
 
     } //main disi
@@ -65,7 +65,7 @@ public class E01 {
             System.out.println("Lutfen sifira bolme islemi yapmayiniz");
         }
 
-        System.out.println("try catch sonrasi kod, akisina devam ediyor");
+        System.out.println("try catch sonrasi kod2, akisina devam ediyor");
 
     }
 
@@ -80,7 +80,7 @@ public class E01 {
             System.out.println("Lutfen sifira bolme islemi yapmayiniz");
         }
 
-        System.out.println("try catch sonrasi kod, akisina devam ediyor");
+        System.out.println("try catch sonrasi kod3, akisina devam ediyor");
 
     }
 
